@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  width: 100%;
+}
+
+.top_icon {
+  width: 30%;
+  margin: 50px 0px 50px 70px;
+}
+
+.parent_container {
+  width: 100%;
+  margin: 6% auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  margin-left: 70px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 0px 0px 0px 0px;
+  margin: 35px 150px 0px 50px;
+  gap: 30px;
+}
+
+.description h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.description p {
+  font-family: "Open Sans", sans-serif;
+  width: 108%;
+  font-size: 20px;
+}
+
+.description button {
+  padding: 15px;
+  color: hsl(300, 69%, 71%);
+  width: 40%;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 5px 20px -5px black;
+  background-color: white;
+}
+
+a :hover {
+  background-color: pink;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -100px;
+  gap: 20px;
+  width: 95%;
+}
+
+.icons :hover {
+  opacity: 50%;
+  background-color: transparent;
+}
+
+.fa-facebook-f {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px rgb(191, 171, 171) solid;
+  border-radius: 50px;
+  background-color: transparent;
+  width: 50px;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+}
+
+.fa-instagram {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px rgb(191, 171, 171) solid;
+  border-radius: 50px;
+  background-color: transparent;
+  width: 50px;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+}
+
+.fa-twitter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px rgb(191, 171, 171) solid;
+  border-radius: 50px;
+  background-color: transparent;
+  width: 50px;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+}
+
+@media (min-width: 375px) and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    background-size: contain;
+    width: 400px;
+  }
+
+  .top_icon img {
+    width: 130px;
+    align-items: center;
+  }
+
+  .parent_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 340px;
+  }
+
+  .description {
+    text-align: center;
+    padding-left: 50px;
+  }
+
+  .description h1 {
+    width: 300px;
+    font-size: 25px;
+  }
+
+  .description p {
+    font-size: 17px;
+    width: 320px;
+    line-height: 30px;
+    margin-left: -20px;
+  }
+
+  .description button {
+    width: 250px;
+    margin-left: 30px;
+    margin: 5px;
+  }
+
+  .icons {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    margin-left: 40px;
+    gap: 10px;
+  }
+
+  .icons i {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
